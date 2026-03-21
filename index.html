@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body class="bg-[#FFFAF0]">
+
+
+    <nav class=" bg-[#FFFAF0] fixed w-full z-20 top-0 start-0 border-b border-default">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./img/raggi-logo.png" class="rounded-full h-14" alt="Raggi logo">
+                <span class="self-center text-xl text-heading font-semibold playwrite uppercase">Raggi
+                    di <span class="text-[#EFBF04]">Sole</span></span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                            d="M5 7h14M5 12h14M5 17h14" />
+                    </svg>
+                </button>
+            </div>
+            <div class=" items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class=" h-[350px] justify-around sm:items-center flex flex-col p-4 md:p-0 sm:mt-4 font-medium border border-default rounded-base  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary sm:max-h-[50px]">
+                    <li class="playwrite">
+                        <a href="#home"
+                            class="block hover:font-bold hover:text-[#EFBF04] py-2 px-3 text-heading rounded  md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li class="playwrite">
+                        <a href="#about"
+                            class="block hover:font-bold hover:text-[#EFBF04] py-2 px-3 text-heading rounded  md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Chi
+                            siamo</a>
+                    </li>
+                    <li class="playwrite">
+                        <a href="#gallery"
+                            class="block hover:font-bold hover:text-[#EFBF04] py-2 px-3 text-heading rounded  md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Galleria</a>
+                    </li>
+                    <li class="playwrite">
+                        <a href="#services"
+                            class="block hover:font-bold hover:text-[#EFBF04] py-2 px-3 text-heading rounded  md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Servizi</a>
+                    </li>
+                    <li class="playwrite">
+                        <a href="#contacts"
+                            class="block hover:font-bold hover:text-[#EFBF04] py-2 px-3 text-heading rounded  md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home"
+        class="h-screen w-screen bg-[url('./img/raggi-bg.jpg')] bg-cover bg-center flex justify-center items-center">
+        <div class="sm:w-1/3 w-[80%] bg-[#FFFAF0] flex flex-col items-start justify-center p-10 rounded-3xl gap-6">
+            <h1 class="text-4xl text-heading font-semibold playwrite uppercase">Raggi di <span
+                    class="font-bold text-[#EFBF04]">sole</span></h1>
+            <h2 class="playwrite">dal 2021</h2>
+            <p class="playwrite sm:w-1/2 text-xl">Un luogo dove <span class="font-bold text-[#EFBF04]">rilassarsi e
+                    ritrovarsi</span>. Ti accoglieremo a braccia aperte e grazie alle nostre cure ti sentirai <span
+                    class="font-bold text-[#EFBF04]">come a casa</span>.</p>
+        </div>
+    </div>
+
+    <div id="about" class="h-screen bg-[#FFFAF0] w-screen flex flex-col justify-center gap-10 p-8 items-center my-20">
+        <div class="flex flex-col sm:flex-row sm:gap-10 sm:items-center max-w-[1000px]">
+            <div class="">
+                <h2 class="text-2xl playwrite uppercase font-bold text-[#EFBF04] pb-4">Chi siamo</h2>
+                <p class="playwrite text-xl">Siamo un gruppo di <span class=" text-[#EFBF04]">persone affiatate</span> con un unico obiettivo:
+                    il <span class=" text-[#EFBF04]">tuo benessere</span>. Siamo mossi da
+                    passione e attenzione alla <span class=" text-[#EFBF04]">cura dei nostri ospiti</span>. Ci occupiamo del corpo ma anche
+                    della mente. Crediamo che il vero <span class=" text-[#EFBF04]">benessere</span> non sia soltanto fisico ma sopratutto
+                    mentale.</p>
+            </div>
+            <div class="hidden sm:block">
+                <img class=" rounded-3xl" src="./img/raggi-about1.jpg" alt="">
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:gap-10 sm:items-center max-w-[1000px]">
+            <div class="hidden sm:block">
+                <img class=" rounded-3xl" src="./img/raggi-about2.jpg" alt="">
+            </div>
+            <div class="">
+                <h2 class="text-2xl playwrite uppercase font-bold text-[#EFBF04] pb-4">La clinica</h2>
+                <p class="playwrite text-xl">Il nostro spazio è pensato per essere la tua <span class=" text-[#EFBF04]">oasi di
+                        tranquillità</span>. Abbiamo creato un ambiente
+                    luminoso e curato, dove la semplicità degli arredi incontra il calore di un'accoglienza familiare.
+                    Non appena entrerai, lascerai fuori il caos e lo stress: ogni cosa è scelta per farti sentire subito
+                    a casa. È un luogo <span class=" text-[#EFBF04]">essenziale ma raffinato</span>, progettato
+                    per offrirti il massimo comfort mentre ti dedichi un momento di <span class=" text-[#EFBF04]">puro relax</span>.</p>
+            </div>
+            
+        </div>
+    </div>
+
+
+    
+
+<div id="gallery" class="relative w-full h-screen" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-full overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>
